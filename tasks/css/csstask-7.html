@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Task-7</title>
+        <style>
+          .box {
+            border: 2px solid white;
+            background-color:rgb(203, 83, 123);
+             width:690px; 
+            margin-left:500px;
+
+          }
+
+          form{
+            color: white;
+            font-style:inherit;
+            
+            border: 2px solid rgb(163, 17, 66);
+            background-color:rgb(163, 17, 66);
+            height:420px;
+            width:390px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 120px;
+            margin-right:120px;
+            padding-top:30px;
+            padding-left: 50px;
+            padding-right:70px;
+
+          }
+          input {
+            border: 1px solid black;
+        } 
+        .L{
+          float:right;
+        }
+       
+        
+         .S{
+          margin-left:150PX;
+         }
+          .Save{
+            padding-left: 170px;
+            padding-right: 170px;
+            padding-top: 10px;
+            padding-bottom:10px;
+           text-align: center;
+           font-weight:bold;
+           font-size: medium;
+          cursor:pointer;
+          }
+          .lan{
+            float: left;
+          }
+          .C{
+            margin-left:140px;
+          }
+          .side{
+            float: right;
+          }
+        </style>
+    </head>
+    <body>
+      <h2 style="text-align: center;">Task-7</h2>
+       <div class="box">
+        
+        <form >
+            <label for="fn">Name:</label>
+            <input type="text" name="fn" class="L" placeholder="enter Full Name" /><br><br>
+            <label for="un">Email:</label>
+            <input type="text" name="un"  class="L" placeholder="enter Username"/><br><br>
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" class="L" placeholder="enter password" /><br><br>
+            <label for="rw">Phone number:</label>
+            <input type="password" name="rw" class="L" placeholder="enter re password" /><br><br>
+            <label >Gender</label>
+            <label class="C">Male</label><input type="radio" name="gender"/>
+            <label >Female</label><input type="radio" name="gender"/>
+            <label >Others</label><input type="radio" name="gender"/>
+          
+            <br><br>
+            <label class="lan" >language:</label>
+            <select class="S">
+                <option>Select language</option>
+                <option>Telugu</option>
+                <option>Hindi</option>
+                <option>English</option>
+                <option>france</option>
+                <option>spanish</option>
+             </select><br><br>
+             <label for="ad">Zip Code:</label>
+            <input type="text"  class="L" name="ad" /><br><br>
+            <label for="A">About:</label>
+            <textarea  placeholder="write about yourself..." class="side"></textarea><br><br><br>
+             <input type="submit" value="Register" class="Save"/>
+        </form>
+    </div>
+  </body>
+</html>

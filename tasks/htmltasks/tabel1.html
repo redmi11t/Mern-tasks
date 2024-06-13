@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Task-4</title>
+        <style>
+
+          form{
+            
+            border: 2px solid black;
+            height:350px;
+            width:350px;
+            margin-left: 600px;
+            padding-top:30px;
+            padding-left: 50px;
+            padding-right:50px;
+
+          }
+          input {
+            border: 1px solid black;
+            float:right;
+        } 
+          
+          
+          select{
+            float:left;
+            margin-left:125px;
+          } 
+          .Save{
+            float: left;
+            background-color: rgb(251, 166, 106);
+            cursor:pointer;
+          }
+          .gender{
+            float:left;
+          }
+          
+
+        </style>
+    </head>
+    <body>
+      <h2 style="text-align:center;">Task-4</h2>
+        <form>
+            <label for="fn">Full Name:</label>
+            <input type="text" name="fn" placeholder="Enter Full Name" /><br><br>
+            <label for="un">Username:</label>
+            <input type="text" name="un" placeholder="Enter Username"/><br><br>
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" placeholder="Enter password" /><br><br>
+            <label for="rw">Re Password:</label>
+            <input type="password" name="rw" placeholder="Enter re password" /><br><br>
+            <label for="ad">Address:</label>
+            <input type="text" name="ad" placeholder="Enter Address" /><br><br>
+            <label for="Age">Age:</label>
+            <input type="text" name="Age" placeholder="Enter Age" /><br><br>
+            <label class="gender">Gender:</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+             </select><br><br>
+             <input type="submit" value="Save" class="Save"/>
+        </form>
+        
+    
+    </body>
+</html>
