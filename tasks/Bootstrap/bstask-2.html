@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .top-bar {
+            background-color: #FFC107;
+            color: #000;
+        }
+        .top-bar a {
+            color: #000;
+        }
+        .navbar-custom {
+            background-color: #000;
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #FFC107;
+        }
+        .header-content {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+        }
+        .header-content img {
+            width: 100%;
+            height: auto;
+        }
+        .header-content .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+        .header-content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .header-content p {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .services {
+            background-color: #212529;
+            color: white;
+            padding: 40px 0;
+        }
+        .service-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #343A40;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .service-box h4 {
+            margin-top: 15px;
+        }
+        .padding-grey {
+            padding: 20px 20px 20px 20px; /* Top, right, bottom, left */
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <span class="font-weight-bold">Builderz</span>
+                <span class="ml-4"><i class="fas fa-clock"></i> Mon - Fri, 8:00 - 18:00</span>
+                <span class="ml-4"><i class="fas fa-phone-alt"></i> +123 345 6789</span>
+                <span class="ml-4"><i class="fas fa-envelope"></i> info@example.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" href="#">Get A Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-content  px-secondary-2">
+        <img src="./Screenshot 2024-06-14 151500.jpg" alt="Professional Construction">
+        <div class="centered">
+            <h1>We Are Professional</h1>
+            <p>For Your Dream Project</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-user-tie fa-3x"></i>
+                        <h4>Expert Worker</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h4>Quality Work</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="fas fa-headset fa-3x"></i>
+                        <h4>24/7 Support</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome and Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
