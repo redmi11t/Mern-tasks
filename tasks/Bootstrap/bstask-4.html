@@ -1,92 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Material Cards</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .card-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .card-links a {
-      color: #FFA000;
-      margin-right: 10px;
-    }
-    .card {
-      height: 450px; /* Adjust this value to increase the card height */
-    }
-    .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card-text {
-      flex-grow: 1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card:hover{
+            cursor: pointer;
+            transform: scale(0.9);
+        }
+        a{
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
 </head>
-<body>
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Image">
-        <div class="card-body">
-          <h5 class="card-title">MATERIAL CARDS</h5>
-          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-        </div>
-        <div class="card-footer card-links">
-          <a href="#">LINK</a>
-          <a href="#">LINK</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Image">
-        <div class="card-body">
-          <h5 class="card-title">MATERIAL CARDS</h5>
-          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-        </div>
-        <div class="card-footer card-links">
-          <a href="#">LINK</a>
-          <a href="#">LINK</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Image">
-        <div class="card-body">
-          <h5 class="card-title">MATERIAL CARDS</h5>
-          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-        </div>
-        <div class="card-footer card-links">
-          <a href="#">LINK</a>
-          <a href="#">LINK</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Image">
-        <div class="card-body">
-          <h5 class="card-title">MATERIAL CARDS</h5>
-          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
-        </div>
-        <div class="card-footer card-links">
-          <a href="#">LINK</a>
-          <a href="#">LINK</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<body style="align-items: center;">
+    <div class="row mt-5 mx-5">
+        <div class="card mx-3 shadow" style="width: 15rem;">
+            <img src="./first card1.png" class="card-img-top my-3 px-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <hr>
+              <a href="#" class="col-2 text-warning ">LINK</a>
+              <a href="#" class="col-2 text-warning link" style="margin-left: 40px;">LINK</a>
+            </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          </div>
+          <div class="card mx-3 shadow" style="width: 15rem;">
+            <img src="./material card.png" class="card-img-top my-3 px-1" alt="material-card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <hr>
+              <a href="#" class="col-2 text-warning ">LINK</a>
+              <a href="#" class="col-2 text-warning" style="margin-left: 40px;">LINK</a>
+            </div>
+
+          </div>
+          <div class="card mx-3 shadow" style="width: 15rem; height: 35rem;">
+            <img id="one" src="./material card.png" class="card-img-top my-3 px-1" alt="material-card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <hr>
+              <a href="#" class="col-2 text-warning ">LINK</a>
+              <a href="#" class="col-2 text-warning" style="margin-left: 40px;">LINK</a>
+            </div>
+        </div>
+            <div class="card mx-3 shadow" style="width: 15rem;">
+                <img src="./material card.png" class="card-img-top my-3 px-1" alt="material-card">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <hr>
+                  <a href="#" class="col-2 text-warning ">LINK</a>
+                  <a href="#" class="col-2 text-warning pb-6" style="margin-left: 40px;">LINK</a>
+                </div>
+          </div>
+    </div>
 </body>
 </html>
