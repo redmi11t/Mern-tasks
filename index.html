@@ -1,197 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dheeraj Task's</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(270deg, #e0f7fa, #ffffff);
+        background-size: 400% 400%;
+        animation: gradientAnimation 3s ease infinite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #333;
+      }
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
         }
-        h1, h3, h4, h5 {
-            color: #333;
+        50% {
+          background-position: 100% 50%;
         }
-        h1 {
-            font-size: 4em;
-            margin-bottom: 10px;
-            text-align: center;
+        100% {
+          background-position: 0% 50%;
         }
-        h3 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        h3, h4, h5 {
-            margin-top: 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        a {
-            color: #2196F3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      }
+      h1 {
+        font-size: 3em; 
+        margin-bottom: 0.2em;
+      }
+      h3 {
+        font-size: 2em; 
+        margin: 0.5em 0;
+        text-align: center;
+      }
+      #tasks-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .task-section {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        max-width: 90%;
+      }
+      .task-section h3 {
+        margin-top: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .task-section {
+        transition: transform 0.2s;
+      }
+      .task-section:hover {
+        transform: scale(1.05);
+      }
+      table {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      th, td {
+        border: 1px solid #ddd;
+      }
     </style>
-</head>
-<body>
-    <h1>K. Dheeraj</h1>
-    <h3>VIT-AP</h3>
-    <h3>2:30-4:30</h3>
-    <h4>HTML Task's</h4>
-    <table>
-        <tr>
+  </head>
+  <body>
+    <h1>K.Dheeraj</h1>
+    <h3>VIT AP CSE</h3>
+    <h3>Slot: 2:30 pm - 4:30 pm</h3>
+    <div id="tasks-container">
+      <div class="task-section" id="html-tasks">
+        <h3>HTML Tasks</h3>
+        <table>
+          <tr>
             <th>Task Name</th>
             <th>Task Link</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Task 1</td>
-            <td><a href="./tasks/htmltasks/table.html">Task 1 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/htmltasks/table.html">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 2</td>
-            <td><a href="./tasks/htmltasks/nested_list.html">Task 2 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/htmltasks/nested_list.html">Task 2 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 3</td>
-            <td><a href="./tasks/htmltasks/links.html">Task 3 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/htmltasks/links.html">Task 3 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 4</td>
-            <td><a href="./tasks/htmltasks/tabel1.html">Task 4 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/htmltasks/tabel1.html">Task 4 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 5</td>
-            <td><a href="./tasks/htmltasks/tablerform.html">Task 5 link</a></td>
-        </tr>
-    </table>
-    <h4>CSS Task's</h4>
-    <table>
-        <tr>
+            <td>
+              <a href="./tasks/htmltasks/tablerform.html">Task 5 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-section" id="css-tasks">
+        <h3>CSS Tasks</h3>
+        <table>
+          <tr>
             <th>Task Name</th>
             <th>Task Link</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Task 1</td>
-            <td><a href="./tasks/css/csstask-1.html">Task 1 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-1.html">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 2</td>
-            <td><a href="./tasks/css/csstask-2.html">Task 2 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-2.html">Task 2 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 3</td>
-            <td><a href="./tasks/css/csstask-3.html">Task 3 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-3.html">Task 3 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 4</td>
-            <td><a href="./tasks/css/csstask-4.html">Task 4 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-4.html">Task 4 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 5</td>
-            <td><a href="./tasks/css/csstask-5.html">Task 5 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-5.html">Task 5 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 6</td>
-            <td><a href="./tasks/css/csstask-6.html">Task 6 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-6.html">Task 6 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 7</td>
-            <td><a href="./tasks/css/csstask-7.html">Task 7 link</a></td>
-        </tr>
-    </table>
-    <h4>Bootstrap Task's</h4>
-    <table>
-        <tr>
+            <td>
+              <a href="./tasks/css/csstask-7.html">Task 7 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="task-section" id="bootstrap-tasks">
+        <h3>Bootstrap Tasks</h3>
+        <table>
+          <tr>
             <th>Task Name</th>
             <th>Task Link</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Task 1</td>
-            <td><a href="./tasks/Bootstrap/bstask-1.html">Task 1 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-1.html">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 2</td>
-            <td><a href="./tasks/Bootstrap/bstask-2.html">Task 2 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-2.html">Task 2 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 3</td>
-            <td><a href="./tasks/Bootstrap/bstask-3.html">Task 3 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-3.html">Task 3 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 4</td>
-            <td><a href="./tasks/Bootstrap/bstask-4.html">Task 4 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-4.html">Task 4 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 5</td>
-            <td><a href="./tasks/Bootstrap/bstask-5.html">Task 5 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-5.html">Task 5 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 6</td>
-            <td><a href="./tasks/Bootstrap/bstask-6.html">Task 6 link</a></td>
-        </tr>
-    </table>
-    <h4>Javascript Task's</h4>
-    <table>
-        <tr>
+            <td>
+              <a href="./tasks/Bootstrap/bstask-6.html">Task 6 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-section" id="js-tasks">
+        <h3>JS Tasks</h3>
+        <table>
+          <tr>
             <th>Task Name</th>
             <th>Task Link</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Task 1</td>
-            <td><a href="./tasks/JsTasks/jstask1.html">Task 1 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask1.html">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 2</td>
-            <td><a href="./tasks/JsTasks/jstask2.html">Task 2 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask2.html">Task 2 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 3</td>
-            <td><a href="./tasks/JsTasks/jstask3.html">Task 3 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask3.html">Task 3 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 4</td>
-            <td><a href="./tasks/JsTasks/jstask4.html">Task 4 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask4.html">Task 4 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 5</td>
-            <td><a href="./tasks/JsTasks/jstask5.html">Task 5 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask5.html">Task 5 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 6</td>
-            <td><a href="./tasks/JsTasks/jstask6.html">Task 6 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask6.html">Task 6 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 7</td>
-            <td><a href="./tasks/JsTasks/jstask7.html">Task 7 link</a></td>
-        </tr>
-        <tr>
+            <td>
+              <a href="./tasks/JsTasks/jstask7.html">Task 7 link</a>
+            </td>
+          </tr>
+          <tr>
             <td>Task 8</td>
-            <td><a href="./tasks/JsTasks/jstask8.html">Task 8 link</a></td>
-        </tr>
-    </table>
-</body>
+            <td>
+              <a href="./tasks/JsTasks/jstask8.html">Task 8 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
